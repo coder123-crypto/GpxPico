@@ -1,0 +1,14 @@
+Some very small utils for processing with GPX files for my personal using.
+
+GpxTrimmer:
+	GpxTrimmer remove all additional data in GPX file except
+	longitude, latitude, time and elevation. Old file saving to backup.
+	GpxTrimmer is supported wildcard in file, i.g. '*.gpx', '2019.09.??.gpx', etc.
+
+	Usage: python gpxtrimmer.py file
+
+GpxJoiner:
+   	GpxJoiner join all segments from some files in one.
+	Hint: this file will trimmed as after GpxTrimmer.
+
+	Usage: python gpxjoiner.py file1.gpx file2.gpx... fileN.gpx destination.gpx
